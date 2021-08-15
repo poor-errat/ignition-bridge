@@ -1,0 +1,39 @@
+{
+    "name": "poor-dev/errat",
+    "description": "Errat library",
+    "type": "library",
+    "keywords": [ "tracing", "error handler", "laravel", "ignition" ],
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "facade/ignition": "2.11",
+        "illuminate/support": "^7.0|^8.0",
+        "monolog/monolog": "^2.0",
+        "symfony/console": "^5.0",
+        "symfony/var-dumper": "^5.0"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "PoorDev",
+            "email": "poor-dev@example.com"
+        }
+    ],
+    "suggest": {
+        "laravel/telescope": "^3.1"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "PoorDev\\Errat\\ErratServiceProvider"
+            ],
+            "aliases": {
+                "Flare": "Facade\\Ignition\\Facades\\Flare"
+            }
+        }
+    }
+}
